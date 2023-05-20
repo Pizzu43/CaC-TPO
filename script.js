@@ -29,6 +29,11 @@ function goToNextSlide() {
   showSlide(currentSlide);
 }
 
+function startCarouselAutoPlay() {
+  setInterval(goToNextSlide, 5000); // Cambia de diapositiva cada 5 segundos
+}
+
 carouselPrev.addEventListener('click', goToPrevSlide);
 carouselNext.addEventListener('click', goToNextSlide);
 showSlide(currentSlide);
+startCarouselAutoPlay(); // Inicia el cambio automático de diapositivas
