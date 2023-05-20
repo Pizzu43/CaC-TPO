@@ -143,7 +143,9 @@ body {
 nav {
   background-color: #FFFFFF;
   padding: 10px;
-  height: 60px; /* Ajusta la altura del nav según tus necesidades */
+  height: 60px;
+  display: flex; 
+  justify-content: center;
 }
 
 nav ul {
