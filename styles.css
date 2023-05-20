@@ -126,11 +126,24 @@ table {
 
 /* ****************************************** */
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Estilos para el nav bar */
 nav {
   background-color: #003366;
   color: white;
   padding: 10px;
+  height: 60px; /* Ajusta la altura del nav según tus necesidades */
 }
 
 nav ul {
@@ -151,8 +164,11 @@ nav ul li a {
 
 /* Estilos para el main */
 main {
-    height: 100vh;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* Estilos para el carrusel de fotos */
 #carousel {
@@ -211,7 +227,8 @@ main {
 #about {
   background-color: #f1f1f1;
   padding: 20px;
-  height: 30%;
+  display: flex;
+  align-items: center;
 }
 
 #about .container {
@@ -231,10 +248,15 @@ main {
   flex-grow: 1;
 }
 
+#about h2 {
+  margin-bottom: 10px;
+}
+
 /* Estilos para el footer */
 footer {
   background-color: #003366;
   color: white;
   text-align: center;
   padding: 10px;
+  height: 60px; /* Ajusta la altura del footer según tus necesidades */
 }
