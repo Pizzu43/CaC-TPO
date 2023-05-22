@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../Style/turnos.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Solicitud de Turno</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Nombre Completo</label>
+          <input type="text" placeholder="Ingrese su nombre completo" required />
+        </div>
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Ingrese su correo" required />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Teléfono</label>
+            <input type="number" placeholder="Ingrese su número telefónico" required />
+          </div>
+          <div class="input-box">
+            <label>Fecha del turno</label>
+            <input type="date" placeholder="Ingrese fecha del turno requerido" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Genero</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input 
+              type="radio" 
+              id="check-male" 
+              name="gender" checked 
+              />
+              <label for="check-male">Hombre</label>
+            </div>
+            <div class="gender">
+              <input 
+              type="radio" 
+              id="check-female" 
+              name="gender" 
+              />
+              <label for="check-female">Mujer</label>
+            </div>
+            <div class="gender">
+              <input 
+              type="radio" 
+              id="check-other" 
+              name="gender" 
+              />
+              <label for="check-other">Prefiero no decirlo</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box pet">
+          <label>Datos de la mascota</label>
+          <input type="text" placeholder="Nombre de la mascota" required />
+          <input type="text" placeholder="Raza" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Tipo de turno</option>
+                <option>Traumatismo</option>
+                <option>Revisión</option>
+                <option>Vacunación</option>
+                <option>Castración</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button>Solicitar</button>
+      </form>
+    </section>
+  </body>
+</html>
