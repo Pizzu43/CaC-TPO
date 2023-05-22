@@ -176,19 +176,37 @@ nav ul li a {
   font-weight: 500;
 }
 
-.contact-button {
+.button {
   margin-left: auto;
   margin-right: 4rem;
 }
 
-.contact-button a {
+.button a {
   display: inline-block;
   padding: 12px 1.5rem;
-  background-color: #00a3ff;
   color: #ffffff;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
+  --bg: #00a3ff;
+  --hover-bg: #ffd60a;
+  --hover-text: #000;
+  border: 1px solid var(--bg);
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button a:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button a:active {
+  transform: translate(0);
+  box-shadow: none;
 }
 
 /* Estilos para el main */
@@ -202,6 +220,8 @@ main {
 /* Menu */
 #menu {
   background-color: #ffd60a;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .menu-content {
@@ -220,16 +240,6 @@ main {
   text-decoration: none;
   font-size: 5rem;
   font-weight: 700;
-}
-
-.menu-button a {
-  display: inline-block;
-  padding: 12px 1.5rem;
-  background-color: #00a3ff;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
 }
 
 .menu-container {
