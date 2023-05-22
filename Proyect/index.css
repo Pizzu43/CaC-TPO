@@ -220,6 +220,8 @@ main {
 /* Menu */
 #menu {
   background-color: #ffd60a;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .menu-content {
