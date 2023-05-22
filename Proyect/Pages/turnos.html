@@ -7,74 +7,91 @@
     <link rel="stylesheet" href="../Style/turnos.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="navbar-icon">
+          <img src="/Proyect/Public/vet.png" alt="Icono" class="icon" />
+        </div>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+        <div class="button">
+          <a href="#">Contactanos</a>
+        </div>
+      </nav>
+    </header>
     <section class="container">
-      <header>Solicitud de Turno</header>
-      <form action="#" class="form">
-        <div class="input-box">
-          <label>Nombre Completo</label>
-          <input type="text" placeholder="Ingrese su nombre completo" required />
-        </div>
-        <div class="input-box">
-          <label>Email</label>
-          <input type="text" placeholder="Ingrese su correo" required />
-        </div>
-        <div class="column">
+      <div class="center">
+        <form action="#" class="form">
+          <h2>Solicitud de Turno</h2>
           <div class="input-box">
-            <label>Teléfono</label>
-            <input type="number" placeholder="Ingrese su número telefónico" required />
+            <label>Nombre Completo</label>
+            <input
+              type="text"
+              placeholder="Ingrese su nombre completo"
+              required
+            />
           </div>
           <div class="input-box">
-            <label>Fecha del turno</label>
-            <input type="date" placeholder="Ingrese fecha del turno requerido" required />
+            <label>Email</label>
+            <input type="text" placeholder="Ingrese su correo" required />
           </div>
-        </div>
-        <div class="gender-box">
-          <h3>Genero</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input 
-              type="radio" 
-              id="check-male" 
-              name="gender" checked 
-              />
-              <label for="check-male">Hombre</label>
-            </div>
-            <div class="gender">
-              <input 
-              type="radio" 
-              id="check-female" 
-              name="gender" 
-              />
-              <label for="check-female">Mujer</label>
-            </div>
-            <div class="gender">
-              <input 
-              type="radio" 
-              id="check-other" 
-              name="gender" 
-              />
-              <label for="check-other">Prefiero no decirlo</label>
-            </div>
-          </div>
-        </div>
-        <div class="input-box pet">
-          <label>Datos de la mascota</label>
-          <input type="text" placeholder="Nombre de la mascota" required />
-          <input type="text" placeholder="Raza" required />
           <div class="column">
-            <div class="select-box">
-              <select>
-                <option hidden>Tipo de turno</option>
-                <option>Traumatismo</option>
-                <option>Revisión</option>
-                <option>Vacunación</option>
-                <option>Castración</option>
-              </select>
+            <div class="input-box">
+              <label>Teléfono</label>
+              <input
+                type="number"
+                placeholder="Ingrese su número telefónico"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label>Fecha del turno</label>
+              <input
+                type="date"
+                placeholder="Ingrese fecha del turno requerido"
+                required
+              />
             </div>
           </div>
-        </div>
-        <button>Solicitar</button>
-      </form>
+          <div class="gender-box">
+            <h3>Genero</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" checked />
+                <label for="check-male">Hombre</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Mujer</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">Prefiero no decirlo</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box pet">
+            <label>Datos de la mascota</label>
+            <input type="text" placeholder="Nombre de la mascota" required />
+            <input type="text" placeholder="Raza" required />
+            <div class="column">
+              <div class="select-box">
+                <select>
+                  <option hidden>Tipo de turno</option>
+                  <option>Traumatismo</option>
+                  <option>Revisión</option>
+                  <option>Vacunación</option>
+                  <option>Castración</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button>Solicitar</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

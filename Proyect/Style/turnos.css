@@ -1,3 +1,201 @@
+/* RESET css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ****************************************** */
+/* Estilos para el nav bar */
+nav {
+  background-color: #ffd60a;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-right: 5rem;
+  margin-left: 4rem;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+nav ul li a {
+  color: #001d3d;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.button a {
+  display: inline-block;
+  padding: 12px 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  --bg: #00a3ff;
+  --hover-bg: #ffd60a;
+  --hover-text: #000;
+  border: 1px solid var(--bg);
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button a:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button a:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
 /* Importado de Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
@@ -8,22 +206,28 @@
 }
 body {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
   background: #003566;
 }
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  padding: 20px;
   max-width: 700px;
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.container header {
+.container h2 {
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
@@ -77,7 +281,7 @@ body {
   column-gap: 5px;
 }
 .gender input {
-  accent-color: #001D3D;
+  accent-color: #001d3d;
 }
 .form :where(.gender input, .gender label) {
   cursor: pointer;
@@ -106,10 +310,10 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #FFD60A;
+  background: #ffd60a;
 }
 .form button:hover {
-  background: #FFC300;
+  background: #ffc300;
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {
