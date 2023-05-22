@@ -224,7 +224,7 @@ nav ul li a {
 
 .hover-underline-animation {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .hover-underline-animation:after {
