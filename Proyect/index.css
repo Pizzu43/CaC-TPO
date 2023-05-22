@@ -234,6 +234,7 @@ main {
 
 .menu-container {
   padding-top: 2.5rem;
+  padding-right: 1rem;
   display: flex;
   justify-content: flex-end;
 }
