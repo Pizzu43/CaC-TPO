@@ -143,7 +143,7 @@ body {
 nav {
   background-color: #ffd60a;
   padding: 10px;
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -175,6 +175,12 @@ nav ul li a {
   font-size: 1rem;
   font-weight: 500;
 }
+
+nav ul li a:hover {
+  color: #001d3d;
+  text-decoration: none;
+}
+
 
 .button {
   margin-left: auto;
