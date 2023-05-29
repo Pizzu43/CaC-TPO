@@ -55,36 +55,36 @@
           Argentina</a
         >
       </div>
-      <form action="#" autocomplete="off">
+      <form action="#" autocomplete="off" onsubmit="return validarFormulario()">
         <input
           type="text"
           name="nombre"
           placeholder="Tu Nombre"
           class="campo"
-          required
+          
         />
         <input
           type="text"
           name="apellido"
           placeholder="Tu Apellido"
           class="campo"
-          required
+          
         />
         <input
-          type="emal"
+          type="email"
           name="email"
           placeholder="Tu Email"
           class="campo"
-          required
+          
         />
         <input
           type="number"
           name="tel"
           placeholder="Tu Número Telefónico"
           class="campo"
-          required
+          
         />
-        <textarea name="mensaje" placeholder="Tu Mensaje..." required>
+        <textarea name="mensaje" placeholder="Tu Mensaje..." >
         </textarea>
         <input
           type="submit"
@@ -124,9 +124,23 @@
     <footer>
       <p>Todos los derechos reservados &copy; 2023 Veterinaria</p>
     </footer>
-    <script
+    <script>
       src="https://kit.fontawesome.com/eb496ab1a0.js"
       crossorigin="anonymous"
-    ></script>
+      
+      function validarFormulario() {
+        var nombre = document.getElementsByName("nombre")[0].value;
+        var apellido = document.getElementsByName("apellido")[0].value;
+        var email = document.getElementsByName("email")[0].value;
+        var tel = document.getElementsByName("tel")[0].value;
+        var mensaje = document.getElementsByName("mensaje")[0].value;
+    
+        if (nombre === "" || apellido === "" || email === "" || tel === "" || mensaje === "") {
+          alert(" Por favor, completa todos los campos.") ;
+          return false ;
+        }
+        return true;
+      }
+    </script>
   </body>
 </html>
