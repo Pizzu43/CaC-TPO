@@ -328,3 +328,123 @@ footer {
   height: 60px; /* Ajusta la altura del footer según tus necesidades */
 }
 
+/* RESPONSIVA */
+
+/* Style Pantallas móviles */
+@media (max-width: 767px) {
+  /* Estilos para el nav bar */
+  nav ul li {
+    margin-right: 2rem;
+  }
+
+  .navbar-icon {
+    margin-right: 2rem;
+    margin-left: 1rem;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  /* Main */
+  main {
+    padding: 10px;
+  }
+
+  /* Menú */
+  .menu-info {
+    margin: 0 1rem;
+  }
+
+  .menu-info h2 {
+    font-size: 3rem;
+  }
+
+  .menu-container {
+    padding: 1rem;
+  }
+
+  /* "Quiénes somos" */
+  #about .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #about img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Style Pantallas de tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* nav bar */
+  nav ul li {
+    margin-right: 3rem;
+  }
+
+  .navbar-icon {
+    margin-right: 3rem;
+    margin-left: 2rem;
+  }
+
+  /* Main */
+  main {
+    padding: 20px;
+  }
+
+  /* Menú */
+  .menu-info {
+    margin: 0 4rem;
+  }
+
+  .menu-info h2 {
+    font-size: 4rem;
+  }
+
+  .menu-container {
+    padding: 2rem;
+  }
+}
+
+/* Style Pantallas de escritorio */
+@media (min-width: 1024px) {
+  /* nav bar */
+  nav ul li {
+    margin-right: 4rem;
+  }
+
+  .navbar-icon {
+    margin-right: 5rem;
+    margin-left: 4rem;
+  }
+
+  /* Main */
+  main {
+    padding: 40px;
+  }
+
+  /* Menú */
+  .menu-info {
+    margin: 0 8rem;
+  }
+
+  .menu-info h2 {
+    font-size: 5rem;
+  }
+
+  .menu-container {
+    padding: 2.5rem;
+  }
+
+  /* "Quiénes somos" */
+  #about .container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #about img {
+    width: 200px;
+    height: 200px;
+  }
+}

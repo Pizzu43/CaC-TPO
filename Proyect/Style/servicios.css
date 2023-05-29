@@ -304,3 +304,12 @@ img {
   max-height: 600px;
   max-width: 300px;
 }
+
+/* Estilos para el footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 60px; /* Ajusta la altura del footer según tus necesidades */
+}
