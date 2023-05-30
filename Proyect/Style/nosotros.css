@@ -256,7 +256,7 @@ nav ul li a:hover {
 
 body {
     min-height: 100vh;
-    background: #003566;
+    background: #001d3d;
   }
 
   .nosotros{
@@ -327,7 +327,7 @@ button{
 
 .turnos{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: larger;
 }
 

@@ -355,7 +355,7 @@ body {
   background: #ffd60a;
 }
 .form button:hover {
-  background: #ffc300;
+  background: #d3a305;
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {
