@@ -307,6 +307,8 @@ body {
     width: 45%;
     border: 1px solid #003566;
     text-align: center;
+    width: 360px;
+    height: 380px;
 }
 
 .vet>h3{
