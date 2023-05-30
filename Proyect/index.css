@@ -200,7 +200,7 @@ nav ul li a {
 
 .button a:hover {
   color: var(--hover-text);
-  transform: translate(-0.25rem,-0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
   background: var(--hover-bg);
   box-shadow: 0.25rem 0.25rem var(--bg);
 }
@@ -290,6 +290,23 @@ main {
   max-width: 90%;
 }
 
+/* DIVIDER SERVICES */
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 8rem;
+}
+
+.services-text {
+  color: #b5dcf3;
+  font-size: 4rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 /* Estilos para la sección "Quiénes somos" */
 #about {
   background-color: #f1f1f1;
@@ -328,7 +345,7 @@ footer {
   height: 60px; /* Ajusta la altura del footer según tus necesidades */
 }
 
-/* RESPONSIVA */
+/* RESPONSIVE */
 
 /* Style Pantallas móviles */
 @media (max-width: 767px) {
