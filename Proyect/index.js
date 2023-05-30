@@ -15,7 +15,7 @@ document.getElementById("obtener-informacion").addEventListener("click", () => {
       const accessToken = data.access_token;
 
       // Realizar solicitud GET a la API de Petfinder utilizando el token de acceso
-      fetch("https://api.petfinder.com/v2/animals", {
+      fetch("https://api.petfinder.com/v2/types", {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
