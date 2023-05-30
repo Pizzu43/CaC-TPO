@@ -1,0 +1,357 @@
+/* RESET css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ****************************************** */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para el nav bar */
+nav {
+  background-color: #ffd60a;
+  padding: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-right: 5rem;
+  margin-left: 4rem;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+nav ul li a {
+  color: #001d3d;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #001d3d;
+  text-decoration: none;
+}
+
+
+.button {
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.button a {
+  display: inline-block;
+  padding: 12px 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  --bg: #00a3ff;
+  --hover-bg: #ffd60a;
+  --hover-text: #000;
+  border: 1px solid var(--bg);
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button a:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button a:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.hover-underline-animation {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00a3ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* body */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #003566;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+  .nosotros{
+    /* border-radius: 0.5px solid #003566 ; */
+    height: 55%;
+    min-height: 200px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+/* .nosotros {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+  } */
+
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+  }
+
+.prof {
+    padding: 2%;
+    margin: auto;
+    background-color: white;
+    border-radius:8px;
+    max-width: 70%;
+    text-align: center;
+}
+
+.profesionales{
+    text-align: center;
+}
+
+.vet {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5%;
+    text-align: center;
+    width: 45%;
+    border: 1px solid #003566;
+    text-align: center;
+    width: 360px;
+    height: 380px;
+}
+
+.vet>h3{
+    color: #003566;
+    font-size: larger;
+}
+
+
+button{
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    cursor: pointer;
+    background-color: #ffd60a;
+    text-align: center;
+    border-style: inherit;
+}
+
+.turnos{
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+/* Estilos para el footer */
+footer {
+  bottom: 0;
+  background-color: #00a3ff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+

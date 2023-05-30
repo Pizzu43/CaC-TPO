@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Veterinaria - Inicio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-icon">
+          <img src="Public/vet.png" alt="Icono" class="icon" />
+        </div>
+        <ul>
+          <li class="cta">
+            <a href="index.html" class="hover-underline-animation">Inicio</a>
+          </li>
+          <li class="cta">
+            <a href="servicios.html" class="hover-underline-animation"
+              >Servicios</a
+            >
+          </li>
+          <li class="cta">
+            <a href="nosotros.html" class="hover-underline-animation"
+              >Nosotros</a
+            >
+          </li>
+        </ul>
+        <div class="button">
+          <a href="Contacto.html">Contactanos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="menu">
+        <div class="menu-content">
+          <div class="menu-info">
+            <h2>Bienvenido a Vet Pet <i class="fa-solid fa-heart"></i></h2>
+            <br />
+            <div class="button" id="obtener-informacion">
+              <a href="#animal-cards-container">Adopta <i class="fa-solid fa-paw"></i></a>
+            </div>            
+          </div>
+          <div class="menu-container">
+            <img src="Public/dog-and-cat.png" alt="Perro y Gato" />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-container">
+        <div class="divider-text">servicios</div>
+        <div class="divider-text">servicios</div>
+        <div class="divider-text">servicios</div>
+      </div>
+
+      <section class="card-container">
+        <div class="card">
+          <img
+            src="Public/dog_card.png"
+            alt="Perro"
+            width="280px"
+            height="280px"
+          />
+          <h5>atendemos</h5>
+          <span>PERROS</span>
+        </div>
+        <div class="card">
+          <img
+            src="Public/cat_card.png"
+            alt="Gato"
+            width="280px"
+            height="280px"
+          />
+          <h5>atendemos</h5>
+          <span>GATOS</span>
+        </div>
+        <div class="card">
+          <img
+            src="Public/bird_card.png"
+            alt="Pájaro"
+            width="280px"
+            height="280px"
+          />
+          <h5>atendemos</h5>
+          <span>PÁJAROS</span>
+        </div>
+      </section>
+
+      <div class="divider-container">
+        <div class="divider-text">adopción</div>
+        <div class="divider-text">adopción</div>
+        <div class="divider-text">adopción</div>
+      </div>
+
+      <section class="adopt">
+        <div id="animal-cards-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados &copy; 2023 Veterinaria</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ad4fae043d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

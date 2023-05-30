@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario de Turnos</title>
+    <link rel="stylesheet" href="./Style/turnos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-icon">
+          <img src="Public/vet.png" alt="Icono" class="icon" />
+        </div>
+        <ul>
+          <li class="cta"><a href="index.html" class="hover-underline-animation">Inicio</a></li>
+          <li class="cta"><a href="turnos.html" class="hover-underline-animation">Servicios</a></li>
+          <li class="cta"><a href="nosotros.html" class="hover-underline-animation">Nosotros</a></li>
+        </ul>
+        <div class="button">
+          <a href="Contacto.html">Contactanos</a>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="center">
+        <form action="#" class="form" id="turnos-form">
+          <h2>Solicitud de Turno</h2>
+          <div class="input-box">
+            <label>Nombre Completo</label>
+            <input
+              type="text"
+              placeholder="Ingrese su nombre completo"
+              pattern="[A-Za-z\s]+"
+              title="Por favor, ingrese solo letras"
+            />
+          </div>
+          <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="Ingrese su correo"/>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Teléfono</label>
+              <input
+                type="number"
+                placeholder="Ingrese su número telefónico"
+              />
+            </div>
+            <div class="input-box">
+              <label>Fecha del turno</label>
+              <input
+                type="date"
+                placeholder="Ingrese fecha del turno requerido"
+              />
+            </div>
+          </div>
+          <div class="gender-box">
+            <h3>Genero</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" checked />
+                <label for="check-male">Hombre</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Mujer</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">Prefiero no decirlo</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box pet">
+            <label>Datos de la mascota</label>
+            <input type="text" placeholder="Nombre de la mascota"/>
+            <input type="text" placeholder="Raza"/>
+            <div class="column">
+              <div class="select-box">
+                <select>
+                  <option hidden>Tipo de turno</option>
+                  <option>Cirugía general</option>
+                  <option>Revisión</option>
+                  <option>Internación</option>
+                  <option>Peluquería</option>
+                  <option>Ecografía y Radiología</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button>Solicitar</button>
+        </form><br>
+      </div>
+      <br>
+    </section>
+    <script>
+      const form = document.getElementById('turnos-form');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const nombreInput = form.querySelector('input[type="text"]');
+        const emailInput = form.querySelector('input[type="email"]');
+        const telefonoInput = form.querySelector('input[type="number"]');
+        const fechaTurnoInput = form.querySelector('input[type="date"]');
+        const nombreMascotaInput = form.querySelectorAll('input[type="text"]')[1];
+        const razaInput = form.querySelectorAll('input[type="text"]')[2];
+        const turnoTypeSelect = form.querySelector('select');
+
+        if (nombreInput.value.trim() === '') {
+          alert('Por favor, ingrese su Nombre.');
+          nombreInput.focus();
+          form.reset();
+          return;
+        }
+        
+        if (emailInput.value.trim() === '') {
+          alert('Por favor, ingrese su email.');
+          emailInput.focus();
+          form.reset();
+          return;
+        }
+
+        if (telefonoInput.value.trim() === '') {
+          alert('Por favor, ingrese su Telefono.');
+          telefonoInput.focus();
+          form.reset();
+          return;
+        }
+
+        if (fechaTurnoInput.value.trim() === '') {
+          alert('Por favor, seleccione un Turno.');
+          fechaTurnoInput.focus();
+          form.reset();
+          return;
+        }
+
+        if (nombreMascotaInput.value.trim() === '') {
+          alert('Por favor, ingrese el nombre de su mascota.');
+          nombreMascotaInput.focus();
+          form.reset();
+          return;
+        }
+
+        if (razaInput.value.trim() === '') {
+          alert('Por favor, ingrese el nombre de raza de su mascota.');
+          razaInput.focus();
+          form.reset();
+          return;
+        }
+
+        if (turnoTypeSelect.value === 'Tipo de turno') {
+          alert('Por favor, seleccione el tipo de turno.');
+          turnoTypeSelect.focus();
+          form.reset();
+          return;
+        }
+
+        form.submit();
+     });
+    </script>
+  </body>
+</html>
